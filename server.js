@@ -16,9 +16,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+
 //api routes
-require("./routes/course-api-routes.js")(app);
-require("./routes/test-api-routes.js")(app);
+require("./routes/.js")(app);//*****api routes go here*****
+
 
 //sync sequelize to database and force table reset
 db.sequelize.sync({ force: true }).then(function() {
