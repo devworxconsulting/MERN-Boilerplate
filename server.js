@@ -1,13 +1,13 @@
-var express = require("express");
+const express = require("express");
 //cors allows react port to grab data from server port
-var cors = require("cors");
+const cors = require("cors");
 
 //sets up the express App
-var app = express();
-var PORT = process.env.PORT || 8080;
+const app = express();
+const PORT = process.env.PORT || 8080;
 
 //require models for syncing
-var db = require("./models");
+const db = require("./models");
 
 // Sets up the Express app to handle data parsing
 app.use(cors());
