@@ -18,7 +18,7 @@ app.use(express.static("public"));
 
 
 //api routes
-require("./routes/.js")(app);//*****api routes go here*****
+require("./routes/test-api-routes.js")(app);//*****api routes go here*****
 
 
 //sync sequelize to database and force table reset

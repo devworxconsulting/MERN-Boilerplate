@@ -4,6 +4,9 @@
 
 ## Install
 
+git clone repository
+change the password in the config/config.json
+
 ```sh
 npm install
 ```
